@@ -8,18 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>
-            Site name
-        </h1>
-    </header>
-    <main>
-        <?php
-        include_once 'views'.DIRECTORY_SEPARATOR.$pageView
-        ?>
-    </main>
-    <footer>
-        VovchenkoMykyta &copy;
-    </footer>
+<header>
+    <h1>
+        Site name
+    </h1>
+</header>
+<main>
+    <?php
+    include_once 'app' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . $pageView;
+    ?>
+</main>
+<footer>
+    VovchenkoMykyta &copy;
+</footer>
 </body>
 </html>
