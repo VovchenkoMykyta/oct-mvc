@@ -35,5 +35,6 @@ class TaskModel
     public function edit($id)
     {
         $sql = "UPDATE `oct-mvc`.`tasks` SET `name` =  WHERE `tasks`.`id` = '$id';";
+        $this->db->query($sql);
     }
 }

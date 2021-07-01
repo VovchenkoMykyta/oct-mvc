@@ -5,11 +5,11 @@
     <div>
         <?= $task['name']?>
         <form action="<?=\core\Route::getUrl('task', 'delete')?>" method="post">
-            <input type="hidden" name="<?= $task['id']?>">
+            <input type="hidden" name="id" value="<?= $task['id']?>">
             <input type="submit" value="delete">
         </form>
         <form action="<?=\core\Route::getUrl('task', 'edit')?>" method="post">
-            <input type="hidden" name="<?= $task['id']?>">
+            <input type="hidden" name="id" value="<?= $task['id']?>">
             <input type="submit" value="edit">
         </form>
     </div>

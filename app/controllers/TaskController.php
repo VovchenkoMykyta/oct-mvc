@@ -36,18 +36,20 @@ class TaskController extends BaseController
 
     public function delete()
     {
-        var_dump($_POST);
         $task = new TaskModel();
-        $taskId = filter_input(INPUT_POST, 'name');
+        $taskId = filter_input(INPUT_POST, 'id');
         $task->delete($taskId);
         Route::redirect('task');
     }
 
     public function edit(){
+        $task = new TaskModel();
+
         $view = new View();
         $view->render('task_edit_view.php', 'default_view.php');
-        $task = new TaskModel();
-        $taskId = filter_input(INPUT_POST, 'name');
+        $taskId = filter_input(INPUT_POST, 'id');
+        $task->edit($taskId);
+        Route::redirect('task');
     }
 
 }
