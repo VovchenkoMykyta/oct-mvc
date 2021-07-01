@@ -14,6 +14,7 @@ class TaskController extends BaseController
 
         $view = new View();
         $view->tasks = $task->all(); // выбираю все задачи и записываю в view
-        $view->render('task_index_view.php','default_view/php');
+
+        $view->render('task_index_view.php','default_view.php');
     }
 }
