@@ -19,4 +19,21 @@ class TaskModel
         $result = $this->db->query($sql);
         return $result->fetch_all(MYSQLI_ASSOC);
     }
+
+    public function add($name)
+    {
+        $sql = "insert into tasks (name) values ('$name');";
+        $this->db->query($sql);
+    }
+
+    public function delete($id)
+    {
+        $sql = "DELETE FROM `oct-mvc`.`tasks` WHERE `tasks`.`id` = '$id';";
+        $this->db->query($sql);
+    }
+
+    public function edit($id)
+    {
+        $sql = "UPDATE `oct-mvc`.`tasks` SET `name` =  WHERE `tasks`.`id` = '$id';";
+    }
 }
