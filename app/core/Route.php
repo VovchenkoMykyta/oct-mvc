@@ -68,11 +68,16 @@ class Route
 
     static public function redirect($controller = null, $action = null)
     {
-        $uri = '/';
-        if(!empty($controller)){
-            $uri .= $controller . '/' . $action;
-        }
-        header('Location:' . $uri);
+        header('Location:' . self::getUrl($controller, $action));
         exit();
+    }
+
+    static public function getUrl($controller = null, $action = null)
+    {
+        $url = '/';
+        if (!empty($controller)) {
+            $url .= $controller . '/' . $action;
+        }
+        return $url;
     }
 }

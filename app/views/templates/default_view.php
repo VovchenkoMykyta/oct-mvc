@@ -13,6 +13,11 @@
         Site name
     </h1>
 </header>
+<nav>
+    <ul>
+        <li><a href="<?= \core\Route::getUrl('tasks', 'index')?>">Tasks</a></li>
+    </ul>
+</nav>
 <main>
     <?php
     include_once 'app' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . $pageView;
