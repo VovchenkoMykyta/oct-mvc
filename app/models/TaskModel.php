@@ -10,7 +10,7 @@ class TaskModel
 
     public function __construct()
     {
-        $this->db = new \mysqli('localhost', 'root', '', 'oct-mvc');
+        $this->db = new \mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
     }
 
     public function all()
