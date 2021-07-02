@@ -2,6 +2,9 @@
 
 
 namespace models;
+use core\Route;
+
+include_once 'config.php';
 
 
 class TaskModel
@@ -32,9 +35,10 @@ class TaskModel
         $this->db->query($sql);
     }
 
-    public function edit($id)
+    public function edit($name,$id)
     {
-        $sql = "UPDATE `oct-mvc`.`tasks` SET `name` =  WHERE `tasks`.`id` = '$id';";
+        $sql = "UPDATE `oct-mvc`.`tasks` SET `name` = '$name' WHERE `tasks`.`id` = '$id';";
         $this->db->query($sql);
+        Route::redirect('task');
     }
 }

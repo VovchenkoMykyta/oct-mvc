@@ -8,7 +8,8 @@
             <input type="hidden" name="id" value="<?= $task['id']?>">
             <input type="submit" value="delete">
         </form>
-        <form action="<?=\core\Route::getUrl('task', 'edit')?>" method="post">
+        <form action="<?=\core\Route::getUrl('task', 'show')?>" method="post">
+            <input type="hidden" name="name" value="<?= $task['name']?>">
             <input type="hidden" name="id" value="<?= $task['id']?>">
             <input type="submit" value="edit">
         </form>

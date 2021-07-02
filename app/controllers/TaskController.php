@@ -42,14 +42,21 @@ class TaskController extends BaseController
         Route::redirect('task');
     }
 
-    public function edit(){
+    public function edit()
+    {
         $task = new TaskModel();
-
-        $view = new View();
-        $view->render('task_edit_view.php', 'default_view.php');
-        $taskId = filter_input(INPUT_POST, 'id');
-        $task->edit($taskId);
-        Route::redirect('task');
+        $taskId = filter_input(INPUT_POST,'id');
+        $taskName = filter_input(INPUT_POST, 'name');
+        $task->edit($taskName, $taskId);
+        var_dump($_POST);
+        exit();
     }
 
+    public function show()
+    {
+        $view = new View();
+        $view->render('task_edit_view.php', 'default_view.php');
+        var_dump($_POST);
+        exit();
+    }
 }
