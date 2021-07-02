@@ -41,6 +41,7 @@ main div form{
     margin-left: 10px;
 }
 main a{
+    text-align: center;
     text-decoration: none;
     color: black;
     border: 1px solid black;
