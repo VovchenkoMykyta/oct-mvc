@@ -48,7 +48,6 @@ class TaskController extends BaseController
         $taskId = filter_input(INPUT_POST,'id');
         $taskName = filter_input(INPUT_POST, 'name');
         $task->edit($taskName, $taskId);
-        var_dump($_POST);
         exit();
     }
 
@@ -56,7 +55,6 @@ class TaskController extends BaseController
     {
         $view = new View();
         $view->render('task_edit_view.php', 'default_view.php');
-        var_dump($_POST);
         exit();
     }
 }
