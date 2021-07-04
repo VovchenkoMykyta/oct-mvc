@@ -39,6 +39,5 @@ class TaskModel
     {
         $sql = "UPDATE `oct-mvc`.`tasks` SET `name` = '$name' WHERE `tasks`.`id` = '$id';";
         $this->db->query($sql);
-        Route::redirect('task');
     }
 }

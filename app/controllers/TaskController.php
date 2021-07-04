@@ -48,13 +48,12 @@ class TaskController extends BaseController
         $taskId = filter_input(INPUT_POST,'id');
         $taskName = filter_input(INPUT_POST, 'name');
         $task->edit($taskName, $taskId);
-        exit();
+        Route::redirect('task');
     }
 
     public function show()
     {
         $view = new View();
         $view->render('task_edit_view.php', 'default_view.php');
-        exit();
     }
 }

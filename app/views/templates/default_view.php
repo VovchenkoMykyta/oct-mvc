@@ -25,7 +25,7 @@
     ?>
 </main>
 <footer>
-    VovchenkoMykyta &copy;
+    <span><a href="https://github.com/VovchenkoMykyta/oct-mvc.git">VovchenkoMykyta &copy;</a></span>
 </footer>
 </body>
 </html>
