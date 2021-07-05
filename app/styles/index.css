@@ -88,9 +88,6 @@ main form input.create:hover{
     background-color: #827e7c;
     cursor: pointer;
 }
-main form input{
-    margin: 10px;
-}
 main div{
     display: flex;
     min-height: 7vh;
@@ -114,9 +111,6 @@ main div span{
     padding-left: 20px;
     min-width: 50px;
     max-width: 200px;
-}
-main div form{
-    margin-left: 20px;
 }
 main a.create{
     display: flex;
