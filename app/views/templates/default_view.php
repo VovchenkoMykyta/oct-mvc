@@ -16,7 +16,7 @@
 </header>
 <nav>
     <ul>
-        <li><a href="<?= \core\Route::getUrl('task', 'index')?>">Tasks</a></li>
+        <li><span class="links"><a href="<?= \core\Route::getUrl('task', 'index')?>">Tasks</a></span></li>
     </ul>
 </nav>
 <main>

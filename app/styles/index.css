@@ -1,3 +1,14 @@
+/*============Classes=============*/
+.create{
+    min-height: 3vh;
+    width: 60px;
+    max-width: 150px;
+    border-radius: 7px;
+}
+
+
+
+/*=========Main==========*/
 header {
     display: flex;
     justify-content: center;
@@ -8,6 +19,25 @@ nav{
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 1px solid black;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li span a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li span.links{
+    padding: 7px 10px;
+    min-width: 60px;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: 2px 1px 4px black;
+    border-radius: 7px;
+    background-color: #a6a29e;
+}
+nav ul li span.links:hover{
+    background-color: #7f7b81;
 }
 main{
     min-height: 75vh;
@@ -48,10 +78,6 @@ main form input.edit:hover{
 }
 main form input.create{
     background-color: #a6a29e;
-    min-height: 3vh;
-    width: 60px;
-    max-width: 150px;
-    border-radius: 7px;
 }
 main form input.create:hover{
     background-color: #827e7c;
@@ -93,8 +119,8 @@ main a.create{
     text-align: center;
     text-decoration: none;
     color: black;
-    max-width: 100px;
-    min-height: 3vh;
+    min-width: 130px;
+    max-height: 5vh;
     border-radius: 7px;
     border: 1px solid black;
     box-shadow: 2px 1px 2px black;
