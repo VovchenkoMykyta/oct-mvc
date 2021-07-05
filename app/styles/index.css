@@ -109,6 +109,8 @@ main div:nth-child(odd){
     background-color: #afaba9;
 }
 main div span{
+    font-size: 18px;
+    font-weight: 700;
     padding-left: 20px;
     min-width: 50px;
     max-width: 200px;
