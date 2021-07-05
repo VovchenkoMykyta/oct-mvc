@@ -62,23 +62,23 @@ main form input[type='submit']{
     min-width: 60px;
 }
 main form input#del{
-    background-color: #ff2117;
+    background-color: rgba(255,33,23,0.54);
     color: aliceblue;
     min-height: 3vh;
     border-radius: 7px;
 }
 main form input#del:hover{
-    background-color: #852b22;
+    background-color: #ff2117;
     cursor: pointer;
 }
 main form input.edit{
-    background-color: #394dff;
-    color: #fffc32;
+    background-color: rgba(57,77,255,0.54);
+    color: #fdfff8;
     min-height: 3vh;
     border-radius: 7px;
 }
 main form input.edit:hover{
-    background-color: #1a2787;
+    background-color: #394dff;
     cursor: pointer;
 }
 main form input.create{
