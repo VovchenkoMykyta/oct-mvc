@@ -17,8 +17,4 @@
     <?php endforeach; ?>
 
 <?php endif; ?>
-
-<!--<form action="--><?//= \core\Route::getUrl('task', 'create') ?><!--" method="get">-->
-<!--    <input type="submit" value="Add new Task" class="create">-->
-<!--</form>-->
 <a href="<?= \core\Route::getUrl('task', 'create')?>" class="create">Add new task</a>
