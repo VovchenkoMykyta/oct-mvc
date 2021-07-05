@@ -5,5 +5,5 @@
         <input type="hidden" name="id" value="<?= $_POST['id'] ?>">
 <!--        <textarea></textarea>-->
     </label>
-    <input type="submit" value="edit">
+    <input type="submit" value="edit" class="edit">
 </form>

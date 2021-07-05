@@ -3,5 +3,5 @@
     <label> Task name
         <input type="text" name="name" placeholder="Enter task name">
     </label>
-    <input type="submit" value="create">
+    <input type="submit" value="create" class="create">
 </form>
