@@ -20,12 +20,18 @@ class TaskController extends BaseController
         $view->render('task_index_view.php', 'default_view.php');
     }
 
+    /**
+     * create view to show create_view.php
+     */
     public function create()
     {
         $view = new View();
         $view->render('task_create_view.php', 'default_view.php');
     }
 
+    /**
+     * create TaskModel and save new data to DataBase
+     */
     public function store()
     {
         $task = new TaskModel();
@@ -34,6 +40,9 @@ class TaskController extends BaseController
         Route::redirect('task');
     }
 
+    /**
+     * Delete an existing data from DataBase
+     */
     public function delete()
     {
         $task = new TaskModel();
@@ -42,6 +51,9 @@ class TaskController extends BaseController
         Route::redirect('task');
     }
 
+    /**
+     * Edit (UPDATE) an existing task in DataBase
+     */
     public function edit()
     {
         $task = new TaskModel();
@@ -51,7 +63,11 @@ class TaskController extends BaseController
         Route::redirect('task');
     }
 
-    public function show()
+    /**
+     * create new view and show edit page
+     * TODO think about another way to show pages with one function for all
+     */
+    public function showEdit()
     {
         $view = new View();
         $view->render('task_edit_view.php', 'default_view.php');
