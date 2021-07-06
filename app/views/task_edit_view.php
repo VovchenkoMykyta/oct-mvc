@@ -1,7 +1,11 @@
 <?php
-$id = filter_input(INPUT_POST, 'id');
-$name = filter_input(INPUT_POST, 'name');
-
+$id = filter_input(INPUT_POST, 'id') ;
+$name = '';
+$model = new \models\TaskModel();
+$tasks = $model->getTaskById($id);
+foreach ($tasks as $item){
+    $name .= $item['name'];
+}
 ?>
 <h2>Edit task</h2>
 <form method="post" action="<?=\core\Route::getUrl('task', 'edit')?>">

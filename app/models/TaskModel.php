@@ -43,6 +43,7 @@ class TaskModel
 
     public function getTaskById($id){
         $sql = "select * from tasks where id = '$id' ;";
-        $this->db->query($sql);
+        $result = $this->db->query($sql);
+        return $result->fetch_all(MYSQLI_ASSOC);
     }
 }
