@@ -69,7 +69,10 @@ class TaskController extends BaseController
      */
     public function showEdit()
     {
+        $task = new TaskModel();
+        $taskId = filter_input(INPUT_POST,'id');
         $view = new View();
         $view->render('task_edit_view.php', 'default_view.php');
+        $task->getTaskById($taskId);
     }
 }

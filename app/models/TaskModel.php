@@ -40,4 +40,9 @@ class TaskModel
         $sql = "UPDATE `oct-mvc`.`tasks` SET `name` = '$name' WHERE `tasks`.`id` = '$id';";
         $this->db->query($sql);
     }
+
+    public function getTaskById($id){
+        $sql = "select * from tasks where id = '$id' ;";
+        $this->db->query($sql);
+    }
 }
