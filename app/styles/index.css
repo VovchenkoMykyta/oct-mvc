@@ -91,6 +91,9 @@ main form input.create:hover{
 main form label input#create-input{
     margin: 15px;
 }
+main form label input#edit-input{
+    margin: 15px;
+}
 main div{
     display: flex;
     min-height: 7vh;
