@@ -88,6 +88,9 @@ main form input.create:hover{
     background-color: #827e7c;
     cursor: pointer;
 }
+main form label input#create-input{
+    margin: 15px;
+}
 main div{
     display: flex;
     min-height: 7vh;
