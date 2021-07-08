@@ -137,6 +137,10 @@ main a.create{
 main a:hover{
     background-color: #7f7b81;
 }
+main button#load_tasks{
+    max-width: 200px;
+    margin: 18px;
+}
 /*=============End Main==============*/
 
 /*=============Footer==============*/
