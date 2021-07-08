@@ -23,4 +23,12 @@ class ApiController extends BaseController
         header("Content_Type: application/json");
         echo $json;
     }
+
+    public function createtask()
+    {
+        $task = new TaskModel();
+        $taskName = filter_input(INPUT_POST, 'name');
+        $task->add($taskName);
+        header($_SERVER["SERVER_PROTOCOL"] . '201 Created', true, 201);
+    }
 }
