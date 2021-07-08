@@ -1,4 +1,3 @@
-<button type="button" id="load_tasks">Load Tasks</button>
 <div id="tasks"></div>
 
 <form name="task_create">

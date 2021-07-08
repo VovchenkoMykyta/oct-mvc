@@ -29,6 +29,6 @@ class ApiController extends BaseController
         $task = new TaskModel();
         $taskName = filter_input(INPUT_POST, 'name');
         $task->add($taskName);
-        header($_SERVER["SERVER_PROTOCOL"] . '201 Created', true, 201);
+        header($_SERVER["SERVER_PROTOCOL"] . ' 201 Created', true, 201);
     }
 }
