@@ -57,7 +57,7 @@ class TaskController extends BaseController
     public function edit()
     {
         $task = new TaskModel();
-        $taskId = filter_input(INPUT_POST,'id');
+        $taskId = filter_input(INPUT_POST, 'id');
         $taskName = filter_input(INPUT_POST, 'name');
         $task->edit($taskName, $taskId);
         Route::redirect('task');
@@ -70,9 +70,15 @@ class TaskController extends BaseController
     public function showEdit()
     {
         $task = new TaskModel();
-        $taskId = filter_input(INPUT_POST,'id');
+        $taskId = filter_input(INPUT_POST, 'id');
         $view = new View();
         $view->render('task_edit_view.php', 'default_view.php');
         $task->getTaskById($taskId);
+    }
+    //переделываем индекс на работу с ajax
+    public function ajax()
+    {
+        $view = new View();
+        $view->render('task_ajax_view.php', 'default_view.php');
     }
 }
